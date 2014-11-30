@@ -9,12 +9,16 @@ body {
     background-attachment:fixed;
     font-size: 24px;
     margin: 0px;
-    padding: 8px;
+    padding: 0px;
 }
 
 /* Portrait layout (default) */
 .app {
-    
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
 
 .app pre {
@@ -22,6 +26,5 @@ body {
     padding: 0;
     font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     white-space: pre-wrap;
-    text-transform: uppercase;
 }
 

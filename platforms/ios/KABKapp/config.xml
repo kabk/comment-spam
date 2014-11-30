@@ -20,8 +20,9 @@
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
     <name>KABKapp</name>
+    <preference name="DisallowOverscroll" value="true" />
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        An example of a simple Cordova/PhoneGap App for the exercise ‘Poetic Spam Device’
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team

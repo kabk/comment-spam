@@ -1,20 +1,22 @@
 var pickRandom = function(list) {
+    // This function takes a list, and returns a random element
+    // from the list
     var index = Math.floor( Math.random() * list.length );
     return list[index];
 }
 
-var injectSpam = function() {
-    // this function will come in handy:
-    // it takes a string like appropriate|perfect|the best
+var chooseWord = function(match, p1){
+    // this function takes a string like "appropriate|perfect|the best"
     // and outputs one of the three
-    var chooseWord = function(match, p1){
-        var parts = p1.split('|');
-        return pickRandom(parts);
-    }
+    var parts = p1.split('|');
+    return pickRandom(parts);
+}
+
+var injectSpam = function() {
     
-    // we get the contents of the <pre>…</pre> block
-    var pre = document.querySelector('pre');
-    var spamTemplate = pre.innerHTML;
+    // we get the contents of the <template>…</template> block
+    var templateElement = document.querySelector('#comment-spam-template');
+    var spamTemplate    = templateElement.innerHTML;
     
     // this is the tricky bit, it’s where we fill in the template
     
@@ -36,10 +38,11 @@ var injectSpam = function() {
     // the different spam messages themselves are also separated by `|`
     // so we split them up and randomly pick one
     var messages = spamTemplate.split("|");
-    var message = pickRandom(messages);
+    var message = pickRandom(messages).trim(); // the trim.() part gets rid of excess new-lines around the text
     
     // the <pre>…</pre> block gets the generated spam message
     // as its new contents
+    var pre = document.querySelector('pre');
     pre.innerHTML = message;
 }
 

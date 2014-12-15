@@ -5,6 +5,37 @@ var pickRandom = function(list) {
     return list[index];
 }
 
+var shuffle = function(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+var pickFiveRandom = function(list) {
+    if (list.length < 5) {
+        alert("that’s less than 5, not enough!");
+        return;
+    }
+    
+    shuffle(list);
+    
+    return list.slice(0,5);
+}
+
+
 var chooseWord = function(match, p1){
     // this function takes a string like "appropriate|perfect|the best"
     // and outputs one of the three
@@ -38,12 +69,13 @@ var injectSpam = function() {
     // the different spam messages themselves are also separated by `|`
     // so we split them up and randomly pick one
     var messages = spamTemplate.split("|");
-    var message = pickRandom(messages).trim(); // the trim.() part gets rid of excess new-lines around the text
+    console.log();
+    var horoscope = pickFiveRandom(messages).join(" "); // the trim.() part gets rid of excess new-lines around the text
     
     // the <pre>…</pre> block gets the generated spam message
     // as its new contents
-    var pre = document.querySelector('pre');
-    pre.innerHTML = message;
+    var p = document.querySelector('.app p');
+    p.innerHTML = horoscope;
 }
 
 var initialize = function() {

@@ -48,7 +48,7 @@ var injectSpam = function() {
 
 var initialize = function() {
     // we want to generate a spam message once the app is ready:
-    document.addEventListener('deviceready', injectSpam, false);
+    injectSpam();
     // and also each time the content is clicked (maybe change this to ‘pull to refresh?’)
     document.querySelector(".app").addEventListener('click', injectSpam, false);
 }

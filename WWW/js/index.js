@@ -81,5 +81,8 @@ var injectSpam = function() {
 var initialize = function() {
     injectSpam();
     // and also each time the content is clicked (maybe change this to ‘pull to refresh?’)
-    document.querySelector(".app").addEventListener('', injectSpam, false);
+    var links = document.querySelectorAll(".topbar_in a");
+    for (var i=0; i < links.length; i++) {
+        links[i].addEventListener('click', injectSpam, false);
+    };
 }

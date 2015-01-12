@@ -1,0 +1,28 @@
+Node version: v0.10.33
+
+Cordova version: 4.1.2
+
+Config.xml file: 
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="net.liketightpants.comment-spam" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Comment Spam</name>
+    <preference name="DisallowOverscroll" value="true" />
+    <description>
+        An example of a simple Cordova/PhoneGap App for the exercise ‘Poetic Spam Device’
+    </description>
+    <author email="eric@ericschrijver" href="http://i.liketightpants.net/and/">
+        Eric Schrijver
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
+
+
+No Plugins Currently Installed
+
+iOS platform:
+
+Xcode 6.1.1
+Build version 6A2008a
+

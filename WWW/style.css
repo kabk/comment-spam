@@ -11,25 +11,29 @@ body {
     margin: 0px;
     padding: 0px;
     background: url(images/sterren.jpg);
-    background-top: 100%;
+    background-size: cover;
     background-repeat: none;
     overflow: hidden;
-    
+    -webkit-font-smoothing: antialiased;
+
 }
 
+
+a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
+a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
+a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
 
 /* Portrait layout (default) */
 
 
-.app {	    
-        font: 14pt "optima"; line-height: 1.4em;
+.app    {	    
+        font: 18pt "optima"; line-height: 1.4em;
         color: white;
         width: 600px; 
         margin: 50vh auto 0 auto;  
         z-index: 10;
-        transform: translateY(-10%);                    
-        -webkit-transform: translateY(-10%);    
-           
+        transform: translateY(-20%);                    
+        -webkit-transform: translateY(-20%);       
         }
         
 .topbar	{
@@ -42,3 +46,16 @@ body {
 		z-index: 1;
 		}        
 		
+.topbar_in
+        
+        {
+        position: relative;
+        top: 10px;
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto; 
+        float: 
+        }
+
+
+

@@ -1,0 +1,44 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    background: url(images/sterren.jpg);
+    background-top: 100%;
+    background-repeat: none;
+    overflow: hidden;
+    
+}
+
+
+/* Portrait layout (default) */
+
+
+.app {	    
+        font: 14pt "optima"; line-height: 1.4em;
+        color: white;
+        width: 600px; 
+        margin: 50vh auto 0 auto;  
+        z-index: 10;
+        transform: translateY(-10%);                    
+        -webkit-transform: translateY(-10%);    
+           
+        }
+        
+.topbar	{
+		position: absolute;
+		top: 0px;
+		height: 50px;
+		width: 100%;
+        box-shadow: 0px 0px 12px black;		
+		background-color: white;
+		z-index: 1;
+		}        
+		

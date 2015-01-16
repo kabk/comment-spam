@@ -27,8 +27,11 @@ a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
 a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
 
-h2                  {font: 12pt "Helvetica"; margin: 1.2em 0 0.5em 0; color: black;}    
-hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 90vw; margin: 1.2em 0 0 0;}    
+h2                  {font: 12pt "Helvetica"; margin: 1.0em 0 0.3em 0; color: black;}    
+hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 85vw; margin: 1.0em 0 0 0; opacity: 0.6;}    
+
+.buttontype         {font: 8pt "Helvetica"; color: Gray; text-decoration: none;}  
+    
     
 /* Portrait layout (default) */
 
@@ -37,11 +40,9 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         font: 9pt "Helvetica"; line-height: 1.3em;
         text-indent: 1.3em;
         color: Gray;
-        width: 80vw; 
-        margin: 40vh auto 0 auto;  
-        z-index: 10;
-        transform: translateY(-20%);                    
-        -webkit-transform: translateY(-20%);       
+        width: 85vw; 
+        margin: 20px 0px 10px 30px;  
+        z-index: 10;     
         }
 
 .backgroundapp    
@@ -49,11 +50,22 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         position: absolute;
         background-color: Snow;
         bottom: 0px;
-        height: 80vh;
+        height: 73vh;
         width: 100%;
+        z-index: 1;
+        box-shadow: 0px 0px 40px 0px Black;
+        border-top: solid 1px Gray;
+        opacity: 0.8;
+        }
+ 
+.topblur
+        {
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        box-shadow: inset 0px 0px 100px 0px White;
         z-index: 0;
-        box-shadow: 0px 0px 12px 0px Black;
-        border: solid 2px White;
         }
     
 .wrapper	
@@ -63,7 +75,18 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
 		width: 100%;
 		z-index: 1;
 		}        
-		
+
+.backbutton 
+        {
+        margin: 20px 20px 20px 20px;
+        height: 25px;
+        width: 50px;
+        border-radius: 4px;
+        border-color: White;
+        border: 0px;
+        background: White;
+        z-index: 10;
+        }
 
 
 }

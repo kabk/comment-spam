@@ -1,3 +1,8 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait)		{
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -7,12 +12,11 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-attachment:fixed;
-    font-size: 24px;
     margin: 0px;
     padding: 0px;
     background: url(images/sterren.jpg);
-    background-size: cover;
-    background-repeat: none;
+    background-size: 1000px;
+    background-repeat:no-repeat;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
 
@@ -23,39 +27,43 @@ a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
 a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
 
+h2                  {font: 12pt "Helvetica"; margin: 1.2em 0 0.5em 0; color: black;}    
+hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 90vw; margin: 1.2em 0 0 0;}    
+    
 /* Portrait layout (default) */
 
 
 .app    {	    
-        font: 18pt "optima"; line-height: 1.4em;
-        color: white;
-        width: 600px; 
-        margin: 50vh auto 0 auto;  
+        font: 9pt "Helvetica"; line-height: 1.3em;
+        text-indent: 1.3em;
+        color: Gray;
+        width: 80vw; 
+        margin: 40vh auto 0 auto;  
         z-index: 10;
         transform: translateY(-20%);                    
         -webkit-transform: translateY(-20%);       
         }
-        
-.topbar	{
+
+.backgroundapp    
+        {
+        position: absolute;
+        background-color: Snow;
+        bottom: 0px;
+        height: 80vh;
+        width: 100%;
+        z-index: 0;
+        box-shadow: 0px 0px 12px 0px Black;
+        border: solid 2px White;
+        }
+    
+.wrapper	
+        {
 		position: absolute;
-		top: 0px;
-		height: 50px;
+		height: 100%;
 		width: 100%;
-        box-shadow: 0px 0px 12px black;		
-		background-color: white;
 		z-index: 1;
 		}        
 		
-.topbar_in
-        
-        {
-        position: relative;
-        top: 10px;
-        width: 100vw;
-        text-align: center;
-        margin: 0 auto; 
-        float: 
-        }
 
 
-
+}

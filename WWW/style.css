@@ -26,6 +26,10 @@ body {
 a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
 a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
+    
+cat_in:link	        {font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
+cat_in:visited		{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
+cat_in:hover        {font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}    
 
 h2                  {font: 12pt "Helvetica"; margin: 1.0em 0 0.3em 0; color: black;}    
 hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 85vw; margin: 1.0em 0 0 0; opacity: 0.6;}    
@@ -54,8 +58,8 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         width: 100%;
         z-index: 1;
         box-shadow: 0px 0px 40px 0px Black;
-        border-top: solid 1px Gray;
-        opacity: 0.8;
+        border-top: solid 1px DarkGray;
+        opacity: 0.7;
         }
  
 .topblur
@@ -64,7 +68,7 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         top: 0px;
         height: 100vh;
         width: 100vw;
-        box-shadow: inset 0px 0px 100px 0px White;
+        box-shadow: inset 0px 0px 100px 0px Silver;
         z-index: 0;
         }
     
@@ -88,5 +92,31 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         z-index: 10;
         }
 
+.cat    {
+        position: absolute;
+        width: 100vw;
+        height: 27vh;
+        z-index: 100;
+        margin: auto 0;
+        }
 
+.cat_in {
+        font: 300 21pt "lato"; color: WhiteSmoke; text-decoration: none; text-align: center;
+        position: relative;
+        height: 80vh;
+        width: 100vw;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        }
+   
+.afdeling1  {
+            position: relative;
+            margin: 0 auto;
+            height: 14.3vh;
+            width: 100vw;
+            background: none;
+            border: 0;
+            }
+    
+    
 }

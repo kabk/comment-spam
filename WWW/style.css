@@ -26,11 +26,10 @@ body {
 a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
 a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
-    
-cat_in:link	        {font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
-cat_in:visited		{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
-cat_in:hover        {font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}    
 
+a:link.categorie	{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
+    
+    
 h2                  {font: 12pt "Helvetica"; margin: 1.0em 0 0.3em 0; color: black;}    
 hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 85vw; margin: 1.0em 0 0 0; opacity: 0.6;}    
 
@@ -106,17 +105,27 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         height: 80vh;
         width: 100vw;
         top: 50%;
-        -webkit-transform: translateY(-50%);
+        -webkit-transform: translateY(-3%);
         }
    
-.afdeling1  {
+.afdeling  {
+            font: 300 15pt "lato"; color: WhiteSmoke; text-decoration: none; text-align: center;
             position: relative;
-            margin: 0 auto;
             height: 14.3vh;
             width: 100vw;
             background: none;
             border: 0;
+            -webkit-font-smoothing: antialiased;
+            text-align: center;
+            box-shadow: 0px 0px 5px 0px Gray;
             }
-    
+
+.afdelingsnaamindex
+            {
+            position: relative;
+            top:50%;
+            margin: 0 auto;
+            -webkit-transform: translateY(-10%);
+            }
     
 }

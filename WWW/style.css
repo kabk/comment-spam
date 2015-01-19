@@ -1,11 +1,13 @@
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
 and (orientation : portrait)		{
 
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
+
+@font-face { font-family: "lato"; src: url('Delicious-Roman.otf'); }
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -15,78 +17,78 @@ body {
     margin: 0px;
     padding: 0px;
     background: url(images/sterren.jpg);
-    background-size: 1000px;
-    background-repeat:no-repeat;
+    background-size: 300%;
+    background-repeat: no-repeat;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
 
 }
 
 
-a:link				{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
+a:link			{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 a:visited			{font:  bold 11pt "Helvetica"; color: Black; text-decoration: none;}
-a:hover				{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
+a:hover			{font:  bold 11pt "Helvetica"; opacity: 0.40; text-decoration: none;}
 
-a:link.categorie	{font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
-    
-    
-h2                  {font: 12pt "Helvetica"; margin: 1.0em 0 0.3em 0; color: black;}    
-hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 85vw; margin: 1.0em 0 0 0; opacity: 0.6;}    
+a:link.categorie        {font:  bold 11pt "Helvetica"; color: Black;  text-decoration: none;}
 
-.buttontype         {font: 8pt "Helvetica"; color: Gray; text-decoration: none;}  
-    
-    
+
+h2                  {font: 12pt "Helvetica"; margin: 1.0em 0 0.3em 0; color: black;}
+hr                  {border: 0; height: 0; border-top: 1px solid White; border-bottom: 1px solid LightGray; width: 85vw; margin: 1.0em 0 0 0; opacity: 0.6;}
+
+.buttontype         {font: 8pt "Helvetica"; color: Gray; text-decoration: none;}
+
+
 /* Portrait layout (default) */
 
 
-.app    {	    
+.app    {
         font: 9pt "Helvetica"; line-height: 1.3em;
         text-indent: 1.3em;
         color: Gray;
-        width: 85vw; 
-        margin: 20px 0px 10px 30px;  
-        z-index: 10;     
+        width: 85vw;
+        margin: 20px 0 10px 30px;
+        z-index: 10;
         }
 
-.backgroundapp    
+.backgroundapp
         {
         position: absolute;
         background-color: Snow;
-        bottom: 0px;
+        bottom: 0;
         height: 73vh;
         width: 100%;
         z-index: 1;
-        box-shadow: 0px 0px 40px 0px Black;
+        box-shadow: 0 0 40px 0 Black;
         border-top: solid 1px DarkGray;
         opacity: 0.7;
         }
- 
+
 .topblur
         {
         position: absolute;
-        top: 0px;
+        top: 0;
         height: 100vh;
         width: 100vw;
-        box-shadow: inset 0px 0px 100px 0px Silver;
+        box-shadow: inset 0 0 100px 0 Silver;
         z-index: 0;
         }
-    
-.wrapper	
+
+.wrapper
         {
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		z-index: 1;
-		}        
+		}
 
-.backbutton 
+.backbutton
         {
         margin: 20px 20px 20px 20px;
         height: 25px;
         width: 50px;
         border-radius: 4px;
         border-color: White;
-        border: 0px;
+        border: 0;
         background: White;
         z-index: 10;
         }
@@ -107,7 +109,7 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
         top: 50%;
         -webkit-transform: translateY(-3%);
         }
-   
+
 .afdeling  {
             font: 300 15pt "lato"; color: WhiteSmoke; text-decoration: none; text-align: center;
             position: relative;
@@ -116,7 +118,6 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
             background: none;
             border: 0;
             -webkit-font-smoothing: antialiased;
-            text-align: center;
             box-shadow: 0 2px 12px -2px Black;
             }
 
@@ -127,5 +128,5 @@ hr                  {border: 0; height: 0; border-top: 1px solid White; border-b
             margin: 0 auto;
             -webkit-transform: translateY(-10%);
             }
-    
+
 }
